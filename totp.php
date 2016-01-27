@@ -1,5 +1,5 @@
 <?php
-
+//TOTP seed
 $secret_seed = "3132333435363738393031323334353637383930";
 
 $time_window = 30;
@@ -27,3 +27,5 @@ $otp = (
 $otp = str_pad($otp, 6, "0", STR_PAD_LEFT);
 
 echo $otp;
+
+?>
